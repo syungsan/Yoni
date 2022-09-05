@@ -16,7 +16,7 @@ public class AOIManager : MonoBehaviour
         Texture2D texture = new Texture2D(1, 1);
         texture.SetPixel(0, 0, Color.white);
         texture.Apply();
-        _texture = texture;
+        this._texture = texture;
     }
 
     private void OnGUI()
@@ -51,7 +51,7 @@ public class AOIManager : MonoBehaviour
 
         // ˜g”²‚«‹éŒ`‚Ì•\Ž¦
         this.aoiRect = new Rect(x, y, width, height);
-        GUI.DrawTexture(this.aoiRect, _texture, ScaleMode.StretchToFill, true, 0, Color.red, 3, 0);
+        GUI.DrawTexture(this.aoiRect, this._texture, ScaleMode.StretchToFill, true, 0, Color.red, 3, 0);
     }
 
     // Update is called once per frame
